@@ -10,11 +10,6 @@ Engine for game `Rock Scissors Paper`
 * PHP >= 7.2
 * Composer
 
-## Configuration
-
-* Copy `.env.example` file to `.env`
-* Edit `.env` to configure app, db connection, jwt secret, mail
-
 ## Install and Run
 
 ```sh
