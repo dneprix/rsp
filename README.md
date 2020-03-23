@@ -22,8 +22,6 @@ make run
 make test
 ```
 
-## Notes
-
 
 
 
