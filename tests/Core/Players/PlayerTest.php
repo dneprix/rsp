@@ -52,17 +52,11 @@ class PlayerTest extends \TestCase
     public function testPlayFail()
     {
         // Create player
-        $player = new Player([
-            Options::NAME_KEY => 'Player',
-            Options::STRATEGY_KEY => Options::STRATEGY_PAPER]);
+        $player = new Player([]);
 
-        // Player play
+        // Check
+        $this->expectExceptionMessage('Undefined');
         $player->play();
-
-        // Check state
-        $actual = $player->getState();
-        $expected = new PaperTool();
-        $this->assertEquals($expected, $actual);
     }
 
     public function testGetStateSuccess()
